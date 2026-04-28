@@ -1,0 +1,33 @@
+.claude/logs/
+.claude/settings.local.json
+.claude/settings.json.proposed
+.claude/settings.json.pre-boilerplate
+.claude/memory-bank/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+*.tsbuildinfo
+
+# Tool caches
+.vite/
+.turbo/
+
+# Environment
+.env
+.env.local
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude
+~
+.git
+
