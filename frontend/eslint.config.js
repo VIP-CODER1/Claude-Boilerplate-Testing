@@ -30,10 +30,17 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     rules: {
       ...react.configs.flat.recommended.rules,
       ...reactHooks.configs.recommended.rules,
+      'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-vars': 'error',
+      'react/prop-types': 'off',
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       'no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-console': ['warn', { allow: ['warn', 'error', 'log'] }],
